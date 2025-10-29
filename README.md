@@ -12,6 +12,8 @@ This makes large files manageable and improves embedding quality.Each text chunk
 <p>
 Fetches saved FAISS index and finds the most relevant text chunks. The flag allow_dangerous_deserialization=True must be used only if you trust the file (e.g., it was created by your own app).Finds the top 3 chunks that are semantically similar to your query.Returns a clean JSON object showing the query and the matching text snippets.
 </p>
+
+
 ```
 
 # fastapi-openai-embed
