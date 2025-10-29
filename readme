@@ -1,0 +1,39 @@
+TO FIX DEPENDENCIES ISSUES
+#Just having it in requirements.txt is not enough — you must install it into the Python environment that your editor or Docker uses.
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r app/requirements.txt
+# quick check
+python -c "import fastapi, fastapi.responses; print('ok')"
+
+
+
+
+
+# Build and Run
+
+
+# Build image
+docker build -t fastapi-embed-service .
+
+# Run container with .env file
+docker run -d -p 8000:8000 --env-file .env fastapi-embed-service
+
+docker ps
+docker ps -a
+docker logs <container_id>
+
+docker stop <container_id>
+docker rm <container_id>
+
+
+http://localhost:8000/docs
+
+FOR DEBUGGING
+
+docker run -d -p 8080:8000 -p 5678:5678 --env-file .env fastapi-embed-service
+
+
+CURSOR IDE : RUN > Start Debugging > Python Debugger 
+http://localhost:8000/docs

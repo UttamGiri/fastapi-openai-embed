@@ -1,0 +1,9 @@
+fastapi==0.111.0          # Modern, fast web framework for APIs
+uvicorn[standard]==0.23.1 # ASGI server to run FastAPI applications
+python-dotenv==1.0.1      # Load environment variables from a .env file
+langchain>=0.1.0,<1.0.0         # Framework for embeddings, vectorstores, and LLM utilities
+langchain-community>=0.1.0
+langchain-openai>=0.1.0         # Provider-specific package for OpenAI integrations
+openai>=1.32.0            # OpenAI Python client for embeddings
+faiss-cpu>=1.7.4          # FAISS vectorstore for similarity search on CPU
+debugpy==1.6.7  #For Debugging
