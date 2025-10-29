@@ -1,3 +1,6 @@
+
+```
+
 # fastapi-openai-embed
 TO FIX DEPENDENCIES ISSUES
 #Just having it in requirements.txt is not enough — you must install it into the Python environment that your editor or Docker uses.
@@ -38,3 +41,5 @@ docker run -d -p 8080:8000 -p 5678:5678 --env-file .env fastapi-embed-service
 
 CURSOR IDE : RUN > Start Debugging > Python Debugger 
 http://localhost:8000/docs
+
+```
